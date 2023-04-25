@@ -15,7 +15,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="#aboutMe">
                     <img className="logo" src={logo} alt="Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
