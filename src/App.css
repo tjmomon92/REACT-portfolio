@@ -21,21 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 p.success {
   color: green;
 }
@@ -44,6 +29,12 @@ p.danger {
   color: red;
 }
 
+.logo {
+  max-height: 150px;
+  max-width: 450px;
+}
+
+/* Master NavBar CSS */
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -53,9 +44,9 @@ nav.navbar {
   transition: 0.33 ease-in-out;
 }
 
-nav.navbar a.navbar-brand {
+/* nav.navbar a.navbar-brand {
   width: 9%;
-}
+} */
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -79,6 +70,7 @@ span.navbar-text {
 .socials {
   display: flex;
   margin-left: 14px;
+  margin-top: 10px;
 }
 
 .socials a {
@@ -119,10 +111,14 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(8%) saturate(96%) hue-rotate(350deg) brightness(95%) contrast(85%);
 }
 
-.navbar-text button {
+.contact-me {
+  display: inline-flex;
+}
+
+.contact-me button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #CAE9F5;
+  border: 1px solid #CAE9F5;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -130,30 +126,30 @@ span.navbar-text {
  background-color: transparent;
  transition: 0.3s ease-in-out;
 }
-.navbar-text button span {
+.contact-me button span {
   z-index: 1;
 }
-.navbar-text button::before {
+.contact-me button::before {
   content: "";
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #CAE9F5;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+.contact-me button:hover {
   color: #121212;
 }
-.navbar-text button:hover::before {
+.contact-me button:hover::before {
  content: "";
  width: 100%;
  height: 100%;
  position: absolute;
 }
-nav.navbar .navbar-toggler:active,
+/* nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
  outline: none;
     box-shadow: none;
@@ -163,19 +159,19 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #CAE9F5;
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
- border-bottom: 2px solid #fff;
+ border-bottom: 2px solid #CAE9F5;
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
  width: 24px;
  position: absolute;
  height: 2px;
- background-color: #fff;
+ background-color: #CAE9F5;
  top: 0;
  left: 0;
  content: '';
@@ -187,17 +183,17 @@ nav.navbar .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
  transform: rotate(45deg);
- background-color: #fff;
+ background-color: #CAE9F5;
  height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
  transform: translateY(8px) rotate(-45deg);
- background-color: #fff;
+ background-color: #CAE9F5;
  height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
  border-color: transparent;
-}
+} */
 
 /* .App-header {
   background-color: #282c34;
