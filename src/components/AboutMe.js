@@ -1,6 +1,7 @@
 // import { useState, useEffect } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Text from './typewriter';
+// Added in ability to change opening 'aboutMe' image
 // import myFace from "../Assets/img/self-portrait.jpg"
 import myAvatar from "../Assets/img/avatar.png"
 // import myLogo from "../Assets/img/FinalLogo.png"
