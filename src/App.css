@@ -10,15 +10,37 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #000000 !important;
+  background-color: #15232e !important;
   color: #CAE9F5;
   font-family: sans-serif !important;
+  background-image: url('./Assets/img/background.avif');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
 }
 
 p.success {
@@ -29,19 +51,19 @@ p.danger {
   color: red;
 }
 
+/* Master NavBar CSS */
 .logo {
-  max-height: 150px;
+  max-height: 110px;
   max-width: 450px;
 }
 
-/* Master NavBar CSS */
 nav.navbar {
-  padding: 18px 0;
+  /* background-color: #101c24; */
+  /* background-color: #0c151b; */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.33 ease-in-out;
 }
 
 /* nav.navbar a.navbar-brand {
@@ -60,6 +82,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 span.navbar-text {
@@ -217,4 +240,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* AboutMe CSS */
+.aboutMe {
+  margin-top: -150px;
+  padding: 230px 0 100px 0;
+  color: #CAE9F5;
+}
+
+/* .myFace {
+  margin-top: 100px;
+  max-height: 500px;
+  max-width: 350px;
+} */
+
+.myAvatar {
+  margin-top: 100px;
+  max-height: 500px;
+  max-width: 350px;
+}
+
+/* .myLogo {
+  margin-top: 100px;
+  margin-left: 80px;
+  max-height: 450px;
+  max-width: 300px;
 } */

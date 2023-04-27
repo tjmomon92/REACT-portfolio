@@ -8,7 +8,7 @@ function Text() {
                 cursor: "_",
                 autoStart: true,
                 loop: true, 
-                strings: ['Full-Stack Developer', 'UI/UX Designer', 'Logo Designer', 'Permanent Coding Student']
+                strings: ['Full-Stack Developer.', 'UI/UX Designer.', 'Logo Designer.', 'Permanent Coding Student.']
             }}
         />
     )
