@@ -55,13 +55,18 @@ p.danger {
 
 /* Master NavBar CSS */
 .logo {
-  max-height: 110px;
-  max-width: 450px;
+  max-height: 60px;
+  max-width: 100px;
+  background-color: transparent;
 }
 
 nav.navbar {
-  /* background-color: #101c24; */
-  /* background-color: #0c151b; */
+  /* background-color: #191946; */
+  /* background-color: #212c58; */
+  /* background-color: #1c3d52; */
+  /* background-color: #001c3d; */
+  /* background-color: #011033; */
+  background-color: #010819;
   position: fixed;
   width: 100%;
   top: 0;
@@ -177,9 +182,17 @@ span.navbar-text {
 
 /* AboutMe CSS */
 .aboutMe {
-  margin-top: -150px;
+  margin-top: -30px;
   padding: 230px 0 100px 0;
   color: #CAE9F5;
+}
+
+.intro {
+  font-size: 30px;
+}
+
+.aboutMe p {
+  font-size: 20px;
 }
 
 /* .myFace {
@@ -189,9 +202,8 @@ span.navbar-text {
 } */
 
 .myAvatar {
-  margin-top: 100px;
-  max-height: 500px;
-  max-width: 350px;
+  max-height: 650px;
+  max-width: 500px;
 }
 
 /* .myLogo {
@@ -223,14 +235,14 @@ span.navbar-text {
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
+/* .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
-}
-.project .nav.nav-pills .nav-item {
+} */
+/* .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
 .project .nav.nav-pills .nav-link {
@@ -246,8 +258,8 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
-}
-.project .nav.nav-pills .nav-link::before {
+} */
+/* .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -263,7 +275,7 @@ span.navbar-text {
 }
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
-}
+} */
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
@@ -284,7 +296,8 @@ span.navbar-text {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  /* background: linear-gradient(90deg, #CAE9F5 -5.91%, #4A2FBD 111.58%); */
+  background: linear-gradient(180deg, #CAE9F5 -10%, #4A2FBD 100%);
   opacity: 0.85;
   position: absolute;
   width: 100%;

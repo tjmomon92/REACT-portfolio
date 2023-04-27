@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavBar} from './components/NavBar';
 import {AboutMe} from './components/AboutMe';
 import {Portfolio} from './components/Portfolio';
-// import {MyResume} from './components/AboutMe';
+import {MyResume} from './components/MyResume';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <AboutMe />
       <Portfolio />
-      {/* <MyResume /> */}
+      <MyResume />
     </div>
   );
 }
