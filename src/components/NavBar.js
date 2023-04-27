@@ -26,7 +26,9 @@ export const NavBar = () => {
                         <div onClick={() => window.location.replace("/#portfolio")}>
                             <Nav.Link href="#portfolio" className={ activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</Nav.Link>
                         </div>
-                        <Nav.Link href="#resume" className={ activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>My Resume</Nav.Link>
+                        <div onClick={() => window.location.replace("/#resume")}>
+                            <Nav.Link href="#resume" className={ activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>My Resume</Nav.Link>
+                        </div>
                     </Nav>
                     <span className="contact-me">
                         <div className="socials">

@@ -1,5 +1,7 @@
 import { Container, Col, Row } from "react-bootstrap";
-import myAvatar from "../Assets/img/avatar.png"
+// import myAvatar from "../Assets/img/avatar.png"
+// import { useEffect, useState } from "react";
+import { MyCube } from "./Cube.js";
 
 export const MyResume = () => {
     return(
@@ -7,7 +9,10 @@ export const MyResume = () => {
             <Container>
                 <Row className="cool-ass-cube">
                     <Col xs={12} md={6} xl={7}>
-                        <img className="myAvatar" src={myAvatar} alt="My Avatar" />
+                        {/* <img className="myAvatar" src={myAvatar} alt="My Avatar" /> */}
+                        {
+                            <MyCube />
+                        }
                     </Col>
                     <Col className="right-resume" xs={12} md={6} xl={5}>
                         <h1 className="resume-title">What I've done</h1>
