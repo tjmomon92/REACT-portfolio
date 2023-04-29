@@ -499,3 +499,12 @@ span.navbar-text {
 .contact form button:hover::before {
   width: 100%;
 }
+
+/* Footer CSS */
+/* .footer {
+  background-color: #010819;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+} */
