@@ -36,7 +36,7 @@ export const NavBar = () => {
                             <a href="https://icons8.com/icon/84888/linkedin"><img src={linkedIn} alt="" /></a>
                             <a href="https://icons8.com/icon/86955/discord"><img src={discord} alt="" /></a>
                         </div>
-                        <button className="contact-button" onClick={() => console.log('connected')}><span>Let's Talk</span></button>
+                        <button className="contact-button" onClick={() => window.location.replace("/#connect")}><span>Let's Talk</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

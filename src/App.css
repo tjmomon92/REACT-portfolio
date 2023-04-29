@@ -86,8 +86,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.8;
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -224,7 +223,7 @@ span.navbar-text {
 	font-size: 45px;
 	/* font-weight: 700; */
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .project p {
   color: #CAE9F5;
@@ -342,6 +341,7 @@ span.navbar-text {
 
 .resume-title {
   	font-size: 40px;
+    margin-top: 130px;
 }
 
 .right-resume p {
@@ -353,7 +353,7 @@ span.navbar-text {
   width: 30%;
   height: 50%;
   margin-left: 30%;
-  margin-top: 5px;
+  margin-top: 135px;
 }
 
 .cubespinner {
@@ -423,4 +423,79 @@ span.navbar-text {
   83% {
     transform: rotateY(90deg);
   }
+}
+
+/* Contact CSS */
+.contact {
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+  color: #CAE9F5;
+  margin-top: 100px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #CAE9F5;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: #CAE9F5;
+  color: #010819;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #CAE9F5;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #010819;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #010819;
+  background-color: #CAE9F5;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #CAE9F5;
+}
+.contact form button::before {
+  content: "";
+  background: #010819;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
 }
