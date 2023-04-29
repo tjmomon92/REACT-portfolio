@@ -182,13 +182,13 @@ span.navbar-text {
 
 /* AboutMe CSS */
 .aboutMe {
-  margin-top: -30px;
+  margin-top: -12px;
   padding: 230px 0 100px 0;
   color: #CAE9F5;
 }
 
 .intro {
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .aboutMe p {
@@ -222,7 +222,7 @@ span.navbar-text {
 .project h2 {
   color: #CAE9F5;
 	font-size: 45px;
-	font-weight: 700;
+	/* font-weight: 700; */
   text-align: center;
   margin-top: 10px;
 }
@@ -335,19 +335,25 @@ span.navbar-text {
 }
 
 /* Resume section CSS */
+.myresume {
+  padding: 80px 0 100px 0;
+  color: #CAE9F5;
+}
+
 .resume-title {
-  
+  	font-size: 40px;
 }
 
 .right-resume p {
-
+    font-size: 20px;
 }
 
 /* Cube Spinner CSS */
 .stage-cube-cont {
-  width: 25%;
-  height: 45%;
+  width: 30%;
+  height: 50%;
   margin-left: 30%;
+  margin-top: 5px;
 }
 
 .cubespinner {

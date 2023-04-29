@@ -16,7 +16,7 @@ export const AboutMe = () => {
                     <Col className="left-about" xs={12} md={6} xl={7}>
                         <span className="intro">Welcome</span>
                         <h1>{`I'm Stuart, but call me TJ. I'm a `}<span className="wrap"><Text/></span></h1>
-                        <p>I am a Texas based full-stack web developer, with a passion for UI/UX design and creation and who finds a fun hobby in application development for just about anything. My focus revolves around clean and efficient code, while ensuring accessibility and ease-of-use to ensure that anyone can utilize my creations. I am a tenacious and quick learner, and there is nothing that I love more than to learn something new about my chosen craft.</p>
+                        <p>I am a Texas based full-stack web developer, with a passion for UI design and creation and who finds a fun hobby in application development for just about anything. My focus revolves around clean and efficient code, while ensuring accessibility and ease-of-use to ensure that anyone can utilize my creations. I am a tenacious and quick learner, and there is nothing that I love more than to learn something new about my chosen craft.</p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         {/* <img className="myFace" src={myFace} alt="My Face" /> */}
