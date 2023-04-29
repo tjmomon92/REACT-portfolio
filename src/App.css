@@ -234,6 +234,8 @@ span.navbar-text {
   text-align: center;
   width: 56%;
 }
+
+/* CSS to add tabs to project section later */
 /* .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -501,10 +503,17 @@ span.navbar-text {
 }
 
 /* Footer CSS */
-/* .footer {
+.footer {
+  bottom: 0;
   background-color: #010819;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  top: 0;
+  height: 70px;
   z-index: 9999;
-} */
+}
+
+.credit {
+  color: #CAE9F5;
+  display: absolute;
+  margin-top: 24px;
+}

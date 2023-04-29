@@ -1,18 +1,27 @@
-import Container from 'react-bootstrap/Container';
+import { Container, Row, Col } from 'react-bootstrap';
 import github from '../Assets/img/icons-github.png';
 import linkedIn from '../Assets/img/icons-linkedin.png';
 import discord from '../Assets/img/icons-discord.png';
 
 export const Footer = () => {
     return (
-        <Footer className='footer'>
+        <footer className='footer'>
             <Container>
-                <div className="socials">
-                    <a href="https://icons8.com/icon/3tC9EQumUAuq/github"><img src={github} alt="" /></a>
-                    <a href="https://icons8.com/icon/84888/linkedin"><img src={linkedIn} alt="" /></a>
-                    <a href="https://icons8.com/icon/86955/discord"><img src={discord} alt="" /></a>
-                </div>
+                <Row>
+                    <Col>
+                        <div className="socials">
+                            <a href="https://github.com/tjmomon92"><img src={github} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/stuart-momon-385ba5151"><img src={linkedIn} alt="" /></a>
+                            <a href="https://icons8.com/icon/86955/discord"><img src={discord} alt="" /></a>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="credit">
+                            <p>All social media icons sourced through icons8. Check them out <a href="https://icons8.com/">here!</a></p>
+                        </div>
+                    </Col>
+                </Row>
             </Container>
-        </Footer>
+        </footer>
     )
 };

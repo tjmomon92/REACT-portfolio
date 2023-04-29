@@ -11,22 +11,22 @@ export const MyCube = () => {
         <div className="stage-cube-cont">
             <div className="cubespinner">
                 <div className="face1 facet">
-                    <a href="https://icons8.com/icon/20909/html-5"><img src={html} alt="" /></a>
+                    <img src={html} alt="" />
                 </div>
                 <div className="face2 facet">
-                    <a href="https://icons8.com/icon/21278/css3"><img src={css} alt="" /></a>
+                    <img src={css} alt="" />
                 </div>
                 <div className="face3 facet">
-                    <a href="https://icons8.com/icon/108784/javascript"><img src={javascript} alt="" /></a>
+                    <img src={javascript} alt="" />
                 </div>
                 <div className="face4 facet">
-                    <a href="https://icons8.com/icon/54087/nodejs"><img src={nodejs} alt="" /></a>
+                    <img src={nodejs} alt="" />
                 </div>
                 <div className="face5 facet">
-                    <a href="https://icons8.com/icon/9nLaR5KFGjN0/mysql-logo"><img src={mysql} alt="" /></a>
+                    <img src={mysql} alt="" />
                 </div>
                 <div className="face6 facet">
-                    <a href="https://icons8.com/icon/wPohyHO_qO1a/react"><img src={react} alt="" /></a>
+                    <img src={react} alt="" />
                 </div>
             </div>
     </div>

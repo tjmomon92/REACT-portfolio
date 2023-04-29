@@ -32,8 +32,8 @@ export const NavBar = () => {
                     </Nav>
                     <span className="contact-me">
                         <div className="socials">
-                            <a href="https://icons8.com/icon/3tC9EQumUAuq/github"><img src={github} alt="" /></a>
-                            <a href="https://icons8.com/icon/84888/linkedin"><img src={linkedIn} alt="" /></a>
+                            <a href="https://github.com/tjmomon92"><img src={github} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/stuart-momon-385ba5151"><img src={linkedIn} alt="" /></a>
                             <a href="https://icons8.com/icon/86955/discord"><img src={discord} alt="" /></a>
                         </div>
                         <button className="contact-button" onClick={() => window.location.replace("/#connect")}><span>Let's Talk</span></button>
