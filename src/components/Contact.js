@@ -19,9 +19,25 @@ export const Contact = () => {
             [category]: value
         })
     }
-    const handleSubmit = () => {
-
-    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setButtontext('Sending');
+        let response = await fetch('https://localhost:5000/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'Application/json;charset=utf-8',
+            },
+            body: JSON.stringify(formDetails),
+        });
+        setButtontext('Send');
+        let result = response.json();
+        setFormDetails(formInitialDetails);
+        if (result.code === 200) {
+            setStatus({success: true, message: 'Message Successfully Sent'});
+        } else {
+            setStatus({success: false, message: 'Something Went Wrong'});
+        }
+    };
 
     return (
         <section className='contact' id='connect'>
@@ -63,4 +79,4 @@ export const Contact = () => {
             </Container>
         </section>
     )
-}
+};
