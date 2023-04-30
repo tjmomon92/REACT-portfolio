@@ -154,6 +154,7 @@ span.navbar-text {
  position: relative;
  background-color: transparent;
  transition: 0.5s ease-in-out;
+ text-decoration: none;
 }
 .contact-me button span {
   z-index: 1;
