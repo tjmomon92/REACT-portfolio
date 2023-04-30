@@ -36,7 +36,9 @@ export const NavBar = () => {
                             <a href="https://www.linkedin.com/in/stuart-momon-385ba5151"><img src={linkedIn} alt="" /></a>
                             <a href="https://instagram.com/tjmomon?igshid=ZDdkNTZiNTM="><img src={insta} alt="" /></a>
                         </div>
-                        <button href='#connect' className="contact-button"><span>Let's Talk</span></button>
+                        <button className="contact-button">
+                            <a href='#connect'><span>Let's Talk</span></a>
+                        </button>
                     </span>
                 </Navbar.Collapse>
             </Container>
