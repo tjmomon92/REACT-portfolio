@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import github from '../Assets/img/icons-github.png';
 import linkedIn from '../Assets/img/icons-linkedin.png';
-import discord from '../Assets/img/icons-discord.png';
+import insta from '../Assets/img/icons8-instagram.png';
 
 export const Footer = () => {
     return (
@@ -12,7 +12,7 @@ export const Footer = () => {
                         <div className="socials">
                             <a href="https://github.com/tjmomon92"><img src={github} alt="" /></a>
                             <a href="https://www.linkedin.com/in/stuart-momon-385ba5151"><img src={linkedIn} alt="" /></a>
-                            <a href="https://icons8.com/icon/86955/discord"><img src={discord} alt="" /></a>
+                            <a href="https://instagram.com/tjmomon?igshid=ZDdkNTZiNTM="><img src={insta} alt="" /></a>
                         </div>
                     </Col>
                     <Col>
