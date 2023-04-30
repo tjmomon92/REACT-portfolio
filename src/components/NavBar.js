@@ -20,13 +20,13 @@ export const NavBar = () => {
                 </Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <div onClick={() => window.location.replace("REACT-portfolio/#home")}>
+                        <div onClick={() => window.location.replace("#home")}>
                             <Nav.Link href="#about" className='navbar-link'>About Me</Nav.Link>
                         </div>
-                        <div onClick={() => window.location.replace("REACT-portfolio/#portfolio")}>
+                        <div onClick={() => window.location.replace("#portfolio")}>
                             <Nav.Link href="#portfolio" className='navbar-link'>Portfolio</Nav.Link>
                         </div>
-                        <div onClick={() => window.location.replace("REACT-portfolio/#resume")}>
+                        <div onClick={() => window.location.replace("#resume")}>
                             <Nav.Link href="#resume" className='navbar-link'>My Resume</Nav.Link>
                         </div>
                     </Nav>
