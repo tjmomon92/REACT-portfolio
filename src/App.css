@@ -146,8 +146,8 @@ span.navbar-text {
 
 .contact-me button {
   font-weight: 700;
-  color: #CAE9F5;
   border: 1px solid #CAE9F5;
+  color: #CAE9F5;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -157,8 +157,12 @@ span.navbar-text {
 }
 .contact-me button span {
   z-index: 1;
+}
+
+.talk {
   text-decoration: none;
 }
+
 .contact-me button::before {
   content: "";
   width: 0%;
@@ -170,7 +174,7 @@ span.navbar-text {
   z-index: -1;
   transition: 0.5s ease-in-out;
 }
-.contact-me button:hover {
+.contact-me button span:hover {
   color: #121212;
 }
 .contact-me button:hover::before {

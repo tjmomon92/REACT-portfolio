@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,10 +8,10 @@ import linkedIn from '../Assets/img/icons-linkedin.png';
 import insta from '../Assets/img/icons8-instagram.png';
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
+    // const [activeLink, setActiveLink] = useState('home');
+    // const onUpdateActiveLink = (value) => {
+    //     setActiveLink(value);
+    // }
     return (
         <Navbar expand="lg">
             <Container>
@@ -37,7 +37,7 @@ export const NavBar = () => {
                             <a href="https://instagram.com/tjmomon?igshid=ZDdkNTZiNTM="><img src={insta} alt="" /></a>
                         </div>
                         <button className="contact-button">
-                            <a href='#connect'><span>Let's Talk</span></a>
+                            <a href='#connect' className='talk'><span>Let's Talk</span></a>
                         </button>
                     </span>
                 </Navbar.Collapse>
