@@ -155,12 +155,9 @@ span.navbar-text {
  background-color: transparent;
  transition: 0.5s ease-in-out;
 }
+
 .contact-me button span {
   z-index: 1;
-}
-
-.talk {
-  text-decoration: none;
 }
 
 .contact-me button::before {
@@ -182,6 +179,47 @@ span.navbar-text {
  width: 100%;
  height: 100%;
  position: absolute;
+}
+
+/* .contact-button {
+  font-weight: 700;
+  border: 1px solid #CAE9F5;
+  color: #CAE9F5;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+ position: relative;
+ background-color: transparent;
+ transition: 0.5s ease-in-out;
+}
+
+.contact-button span {
+  z-index: 1;
+}
+
+.contact-button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #CAE9F5;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+.contact-button span:hover {
+  color: #121212;
+}
+.contact-button:hover::before {
+ content: "";
+ width: 100%;
+ height: 100%;
+ position: absolute;
+} */
+
+.talk {
+  text-decoration: none;
 }
 
 /* AboutMe CSS */

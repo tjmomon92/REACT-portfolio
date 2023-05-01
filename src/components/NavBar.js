@@ -39,6 +39,9 @@ export const NavBar = () => {
                         <button className="contact-button">
                             <a href='#connect' className='talk'><span>Let's Talk</span></a>
                         </button>
+                        {/* <div href='#connect' className="contact-button">
+                            <span>Let's Talk</span>
+                        </div> */}
                     </span>
                 </Navbar.Collapse>
             </Container>
