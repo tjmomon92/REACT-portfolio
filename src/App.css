@@ -278,6 +278,10 @@ span.navbar-text {
   width: 56%;
 }
 
+h4 {
+  font-size: 25px !important;
+}
+
 /* CSS to add tabs to project section later */
 /* .project .nav.nav-pills {
   width: 72%;
@@ -341,7 +345,7 @@ span.navbar-text {
 .proj-imgbx::before {
   content: "";
   /* background: linear-gradient(90deg, #CAE9F5 -5.91%, #4A2FBD 111.58%); */
-  background: linear-gradient(180deg, #CAE9F5 -10%, #4A2FBD 100%);
+  background: linear-gradient(180deg, #CAE9F5 -1%, #4A2FBD 130%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
