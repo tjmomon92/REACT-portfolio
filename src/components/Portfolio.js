@@ -4,6 +4,7 @@ import placeholder from "../Assets/img/placeholder.jpeg";
 import flex from "../Assets/img/flex-appeal.png";
 import read from "../Assets/img/readme.png";
 import employee from "../Assets/img/employee.png";
+import sql from "../Assets/img/sql.png";
 
 
 export const Portfolio = () => {
@@ -14,29 +15,29 @@ export const Portfolio = () => {
             imgUrl: flex,
         },
         {
+            title: "placeholder 2",
+            description: "placeholder 2",
+            imgUrl: placeholder,
+        },
+        {
+            title: "placeholder 3",
+            description: "placeholder 3",
+            imgUrl: placeholder,
+        },
+        {
             title: <a href='https://github.com/tjmomon92/README-Generator'>README Generator</a>,
             description: "A node.js application used to create professional README files",
             imgUrl: read,
-        },
+      },
         {
             title: <a href='https://github.com/tjmomon92/Employee-Profile-Generator'>Employee Profile Generator</a>,
             description: "A node.js application used to dynamically create HTML for employee profiles based on user entry",
             imgUrl: employee,
-        },
+      },
         {
-            title: "placeholder 4",
-            description: "placeholder 4",
-            imgUrl: placeholder,
-        },
-        {
-            title: "placeholder 5",
-            description: "placeholder 5",
-            imgUrl: placeholder,
-        },
-        {
-            title: "placeholder 6",
-            description: "placeholder 6",
-            imgUrl: placeholder,
+            title: <a href='https://github.com/tjmomon92/SQL-Employee-Tracker'>SQL Employee Tracker</a>,
+            description: "A node.js application used to create and interact with an employee information database",
+            imgUrl: sql,
         },
     ];
 
