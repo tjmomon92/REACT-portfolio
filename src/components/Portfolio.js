@@ -1,23 +1,27 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import placeholder from "../Assets/img/placeholder.jpeg"
+import placeholder from "../Assets/img/placeholder.jpeg";
+import flex from "../Assets/img/flex-appeal.png";
+import read from "../Assets/img/readme.png";
+import employee from "../Assets/img/employee.png";
+
 
 export const Portfolio = () => {
     const projects = [
         {
-            title: "placeholder 1",
-            description: "placeholder 1",
-            imgUrl: placeholder,
+            title: <a href='https://flex-appeal.herokuapp.com/'>Flex-Appeal</a>,
+            description: "A handy workout app where you can create and store your own workout plans",
+            imgUrl: flex,
         },
         {
-            title: "placeholder 2",
-            description: "placeholder 2",
-            imgUrl: placeholder,
+            title: <a href='https://github.com/tjmomon92/README-Generator'>README Generator</a>,
+            description: "A node.js application used to create professional README files",
+            imgUrl: read,
         },
         {
-            title: "placeholder 3",
-            description: "placehelder 3",
-            imgUrl: placeholder,
+            title: <a href='https://github.com/tjmomon92/Employee-Profile-Generator'>Employee Profile Generator</a>,
+            description: "A node.js application used to dynamically create HTML for employee profiles based on user entry",
+            imgUrl: employee,
         },
         {
             title: "placeholder 4",
