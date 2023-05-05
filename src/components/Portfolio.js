@@ -5,6 +5,8 @@ import flex from "../Assets/img/flex-appeal.png";
 import read from "../Assets/img/readme.png";
 import employee from "../Assets/img/employee.png";
 import sql from "../Assets/img/sql.png";
+import ecommerce from "../Assets/img/ecommerce.png";
+import note from "../Assets/img/note.png";
 
 
 export const Portfolio = () => {
@@ -15,14 +17,14 @@ export const Portfolio = () => {
             imgUrl: flex,
         },
         {
-            title: "placeholder 2",
-            description: "placeholder 2",
-            imgUrl: placeholder,
+            title: <a href='https://js-notetaker.herokuapp.com/'>JS Notetaker</a>,
+            description: "A handy application to stay organized",
+            imgUrl: note,
         },
         {
-            title: "placeholder 3",
-            description: "placeholder 3",
-            imgUrl: placeholder,
+            title: <a href='https://github.com/tjmomon92/E-Commerce-ORM-BackEnd-Work'>E-Commerce BackEnd</a>,
+            description: "A back-end API useful for E-Commerce sites",
+            imgUrl: ecommerce,
         },
         {
             title: <a href='https://github.com/tjmomon92/README-Generator'>README Generator</a>,
