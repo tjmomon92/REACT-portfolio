@@ -9,13 +9,14 @@ export const Contact = (props) => {
     const[fullName,setFullName]=useState('');
     const[fullEmail,setFullEmail]=useState('');
     const[fullMessage,setFullMessage]=useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = () => {
 
-        alert("Message Sent!");
-        e.preventDefault();
+        alert("Message Sent")
+        // e.preventDefault();
         setFullName('');
         setFullEmail('');
         setFullMessage('');
@@ -28,7 +29,25 @@ export const Contact = (props) => {
             console.log(error.text);
             console.log("Message Failed!");
         });
+
     };
+
+    const finalSendEmail = (e) => {
+        if (fullName.length===0) {
+            e.preventDefault();
+            setErrorMessage('Please complete all fields');
+        } else if (fullEmail.length===0) {
+            e.preventDefault();
+            setErrorMessage('Please complete all fields');
+        } else if (fullMessage.length===0) {
+            e.preventDefault();
+            setErrorMessage('Please complete all fields');
+        } else {
+            e.preventDefault();
+            sendEmail();
+            setErrorMessage('');
+        }
+    }
 
     return (
         <section className='contact' id='connect'>
@@ -36,7 +55,8 @@ export const Contact = (props) => {
                 <Row className='align-items-center'>
                     <Col md={6}>
                         <h2>Get in Touch</h2>
-                        <form ref={form} onSubmit={sendEmail}>
+                        {errorMessage && <p className='error'>{errorMessage}</p>}
+                        <form ref={form} onSubmit={finalSendEmail}>
                             <Row>
                                 <Col sm={6} className='px-1'>
                                     <input type='text' name="user_name" placeholder='Name' onChange={e => setFullName(e.target.value)} value={fullName} />
