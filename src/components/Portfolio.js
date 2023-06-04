@@ -7,10 +7,16 @@ import employee from "../Assets/img/employee.png";
 import sql from "../Assets/img/sql.png";
 import ecommerce from "../Assets/img/ecommerce.png";
 import note from "../Assets/img/note.png";
+import jolt from "../Assets/img/Jolt.png";
 
 
 export const Portfolio = () => {
     const projects = [
+        {
+        title: <a href='https://jolt2.herokuapp.com/'>JOLT</a>,
+        description: "A lightning-fast way to jump-start your finances",
+        imgUrl: jolt,
+        },
         {
             title: <a href='https://flex-appeal.herokuapp.com/'>Flex-Appeal</a>,
             description: "A handy workout app where you can create and store your own workout plans",
@@ -36,11 +42,11 @@ export const Portfolio = () => {
             description: "A node.js application used to dynamically create HTML for employee profiles based on user entry",
             imgUrl: employee,
       },
-        {
-            title: <a href='https://github.com/tjmomon92/SQL-Employee-Tracker'>SQL Employee Tracker</a>,
-            description: "A node.js application used to create and interact with an employee information database",
-            imgUrl: sql,
-        },
+        // {
+        //     title: <a href='https://github.com/tjmomon92/SQL-Employee-Tracker'>SQL Employee Tracker</a>,
+        //     description: "A node.js application used to create and interact with an employee information database",
+        //     imgUrl: sql,
+        // },
     ];
 
     return (
