@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/REACT-portfolio/static/css/main.ce58a8a5.css",
-    "main.js": "/REACT-portfolio/static/js/main.22852fb6.js",
+    "main.js": "/REACT-portfolio/static/js/main.b2ddd7c8.js",
     "static/js/787.56fcebfa.chunk.js": "/REACT-portfolio/static/js/787.56fcebfa.chunk.js",
     "static/media/flex-appeal.png": "/REACT-portfolio/static/media/flex-appeal.188b6f97c5f2ec51df7f.png",
     "static/media/Jolt.png": "/REACT-portfolio/static/media/Jolt.50bc69898edaf1c6bc31.png",
@@ -18,11 +18,11 @@
     "static/media/background.avif": "/REACT-portfolio/static/media/background.4b1116f4461d0c386eeb.avif",
     "index.html": "/REACT-portfolio/index.html",
     "main.ce58a8a5.css.map": "/REACT-portfolio/static/css/main.ce58a8a5.css.map",
-    "main.22852fb6.js.map": "/REACT-portfolio/static/js/main.22852fb6.js.map",
+    "main.b2ddd7c8.js.map": "/REACT-portfolio/static/js/main.b2ddd7c8.js.map",
     "787.56fcebfa.chunk.js.map": "/REACT-portfolio/static/js/787.56fcebfa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce58a8a5.css",
-    "static/js/main.22852fb6.js"
+    "static/js/main.b2ddd7c8.js"
   ]
 }
