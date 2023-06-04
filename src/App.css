@@ -517,7 +517,7 @@ h4 {
   color: #010819;
   opacity: 0.8;
 }
-.contact form button {
+.contact-submit-button {
   font-weight: 700;
   color: #010819;
   background-color: #CAE9F5;
@@ -528,14 +528,14 @@ h4 {
   position: relative;
   transition: 0.3s ease-in-out;
 }
-.contact form button span {
+.contact-submit-button span {
   z-index: 1;
   position: relative;
 }
-.contact form button:hover {
+.contact-submit-button:hover {
   color: #CAE9F5;
 }
-.contact form button::before {
+.contact-submit-button::before {
   content: "";
   background: #010819;
   width: 0;
@@ -546,7 +546,7 @@ h4 {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
-.contact form button:hover::before {
+.contact-submit-button:hover::before {
   width: 100%;
 }
 
@@ -568,6 +568,18 @@ h4 {
 
 @media only screen and (max-width: 993px) {
   .resume-title {
-    margin-top: 220px;
+    margin-top: 260px;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .footer {
+    height: 3%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .socials {
+    margin-top: 15%;
   }
 }

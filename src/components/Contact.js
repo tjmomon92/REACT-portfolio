@@ -1,43 +1,24 @@
-import { useState } from 'react';
+// import { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from 'react-bootstrap';
 import self from '../Assets/img/self-portrait.jpg';
 
 export const Contact = () => {
-    const formInitialDetails ={
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-    }
-    const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtontext] = useState('Send');
-    const [status, setStatus] = useState({});
-    const onFormUpdate = (category, value) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value
-        })
-    }
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtontext('Sending');
-        let response = await fetch('https://localhost:5000/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'Application/json;charset=utf-8',
-            },
-            body: JSON.stringify(formDetails),
-        });
-        setButtontext('Send');
-        let result = response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code === 200) {
-            setStatus({success: true, message: 'Message Successfully Sent'});
-        } else {
-            setStatus({success: false, message: 'Something Went Wrong'});
-        }
-    };
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ibyafw8', 'template_vgeu6pr', form.current, 'nYDRioNsVRnTMe5Z_')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Message Sent!");
+      }, (error) => {
+          console.log(error.text);
+          console.log("Message Failed!");
+      });
+  };
 
     return (
         <section className='contact' id='connect'>
@@ -45,30 +26,18 @@ export const Contact = () => {
                 <Row className='align-items-center'>
                     <Col md={6}>
                         <h2>Get in Touch</h2>
-                        <form onSubmit={handleSubmit}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col sm={6} className='px-1'>
-                                    <input type='text' value={formDetails.firstName} placeholder='First Name' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                                    <input type='text' name="user_name" placeholder='Name' />
                                 </Col>
                                 <Col sm={6} className='px-1'>
-                                    <input type='text' value={formDetails.lastName} placeholder='Last Name' onChange={(e) => onFormUpdate('lastName', e.target.value)} />
-                                </Col>
-                                <Col sm={6} className='px-1'>
-                                    <input type='email' value={formDetails.email} placeholder='Email Address' onChange={(e) => onFormUpdate('email', e.target.value)} />
-                                </Col>
-                                <Col sm={6} className='px-1'>
-                                    <input type='tel' value={formDetails.phone} placeholder='Phone Number' onChange={(e) => onFormUpdate('phone', e.target.value)} />
+                                    <input type='email' name="user_email" placeholder='Email' />
                                 </Col>
                                 <Col>
-                                    <textarea row='6' value={formDetails.message} placeholder='Message' onChange={(e) => onFormUpdate('message', e.target.value)} />
-                                    <button type='submit'><span>{buttonText}</span></button>
+                                    <textarea row='6' name="message" placeholder='Message' />
+                                    <button className='contact-submit-button' type="submit" value="Send"><span>Send</span></button>
                                 </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.sucess === false ? 'danger' : 'success'}>{status.message}</p>
-                                    </Col>
-                                }
                             </Row>
                         </form>
                     </Col>
