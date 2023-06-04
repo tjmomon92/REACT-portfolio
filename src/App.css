@@ -147,7 +147,7 @@ span.navbar-text {
 .contact-me button {
   font-weight: 700;
   border: 1px solid #CAE9F5;
-  color: #CAE9F5;
+  color: blue;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -564,4 +564,10 @@ h4 {
   color: #CAE9F5;
   display: absolute;
   margin-top: 24px;
+}
+
+@media only screen and (max-width: 993px) {
+  .resume-title {
+    margin-top: 220px;
+  }
 }
