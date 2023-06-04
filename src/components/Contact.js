@@ -10,12 +10,12 @@ export const Contact = (props) => {
     const[fullEmail,setFullEmail]=useState('');
     const[fullMessage,setFullMessage]=useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
     const form = useRef();
 
     const sendEmail = () => {
 
-        alert("Message Sent")
         // e.preventDefault();
         setFullName('');
         setFullEmail('');
@@ -36,16 +36,20 @@ export const Contact = (props) => {
         if (fullName.length===0) {
             e.preventDefault();
             setErrorMessage('Please complete all fields');
+            setSuccessMessage('')
         } else if (fullEmail.length===0) {
             e.preventDefault();
             setErrorMessage('Please complete all fields');
+            setSuccessMessage('')
         } else if (fullMessage.length===0) {
             e.preventDefault();
             setErrorMessage('Please complete all fields');
+            setSuccessMessage('')
         } else {
             e.preventDefault();
             sendEmail();
             setErrorMessage('');
+            setSuccessMessage('Message Sent!')
         }
     }
 
@@ -56,6 +60,7 @@ export const Contact = (props) => {
                     <Col md={6}>
                         <h2>Get in Touch</h2>
                         {errorMessage && <p className='error'>{errorMessage}</p>}
+                        {successMessage && <p className='error'>{successMessage}</p>}
                         <form ref={form} onSubmit={finalSendEmail}>
                             <Row>
                                 <Col sm={6} className='px-1'>
