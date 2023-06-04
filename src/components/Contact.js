@@ -1,24 +1,34 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from 'react-bootstrap';
 import self from '../Assets/img/self-portrait.jpg';
 
-export const Contact = () => {
+export const Contact = (props) => {
+
+    const[fullName,setFullName]=useState('');
+    const[fullEmail,setFullEmail]=useState('');
+    const[fullMessage,setFullMessage]=useState('');
+
     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
 
-    emailjs.sendForm('service_ibyafw8', 'template_vgeu6pr', form.current, 'nYDRioNsVRnTMe5Z_')
-      .then((result) => {
-          console.log(result.text);
-          console.log("Message Sent!");
-      }, (error) => {
-          console.log(error.text);
-          console.log("Message Failed!");
-      });
-  };
+        alert("Message Sent!");
+        e.preventDefault();
+        setFullName('');
+        setFullEmail('');
+        setFullMessage('');
+
+        emailjs.sendForm('service_ibyafw8', 'template_vgeu6pr', form.current, 'nYDRioNsVRnTMe5Z_')
+        .then((result) => {
+            console.log(result.text);
+            console.log("Message Sent!");
+        }, (error) => {
+            console.log(error.text);
+            console.log("Message Failed!");
+        });
+    };
 
     return (
         <section className='contact' id='connect'>
@@ -29,13 +39,13 @@ export const Contact = () => {
                         <form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col sm={6} className='px-1'>
-                                    <input type='text' name="user_name" placeholder='Name' />
+                                    <input type='text' name="user_name" placeholder='Name' onChange={e => setFullName(e.target.value)} value={fullName} />
                                 </Col>
                                 <Col sm={6} className='px-1'>
-                                    <input type='email' name="user_email" placeholder='Email' />
+                                    <input type='email' name="user_email" placeholder='Email' onChange={e => setFullEmail(e.target.value)} value={fullEmail} />
                                 </Col>
                                 <Col>
-                                    <textarea row='6' name="message" placeholder='Message' />
+                                    <textarea row='6' name="message" placeholder='Message' onChange={e => setFullMessage(e.target.value)} value={fullMessage} />
                                     <button className='contact-submit-button' type="submit" value="Send"><span>Send</span></button>
                                 </Col>
                             </Row>
